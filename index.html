@@ -18,6 +18,17 @@
           id="treasure"
           src="assets/treasure/model.gltf"
         ></a-asset-item>
+
+        <a-asset-item
+        id="coin"
+        src="assets/coin/scene.gltf"
+      ></a-asset-item>
+
+
+      <a-asset-item
+        id="fish"
+        src="assets/fish/scene.gltf"
+      ></a-asset-item>
         <a-asset-item
           id="xyz"
           src="assets/coral_fish/scene.gltf"
@@ -86,14 +97,34 @@
         rotation="0 90 -20"        
         diver-rotation-reader
       >
-        <a-sphere
-          id="bubble1"
-          position="52.9829 119.97737 -49.38121"
-          radius="1"
-          color="#b2ebf2"
-          animation="property: position; to: 52.9829 300 -49.38121;easing:linear; loop: true; dur: 2000"
-        ></a-sphere>
-      </a-entity>
+
+      <a-sphere
+      id="bubble1"
+      position="52.9829 119.97737 -49.38121"
+      radius="1"
+      color="#b2ebf2"
+      animation="property: position; to: 52.9829 300 -49.38121;easing:linear; loop: true; dur: 2000"
+    ></a-sphere>
+  </a-entity>
+      <a-entity
+      gltf-model="#coin"
+      scale="0.1 0.1 0.1"
+      position="5 5 15"
+      rotation="0 90 -20"        
+      diver-rotation-reader
+    >
+</a-entity>
+
+</a-entity>
+<a-entity
+gltf-model="#fish"
+scale="0.1 0.1 0.1"
+position="5 3 15"
+rotation="0 90 -20"        
+diver-rotation-reader
+>
+</a-entity>
+       
 
       <a-cylinder color="#00009e" radius="100" opacity="0.2"></a-cylinder>
 
